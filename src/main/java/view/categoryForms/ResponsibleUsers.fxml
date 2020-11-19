@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="210.0" prefWidth="391.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <TextField alignment="CENTER" editable="false" layoutX="121.0" layoutY="29.0" text="Choose Responsible User" />
+        <ChoiceBox fx:id="responsibleUserChoiceBox" layoutX="121.0" layoutY="73.0" prefWidth="150.0" />
+        <Button fx:id="nextButton" layoutX="176.0" layoutY="152.0" mnemonicParsing="false" text="Next" />
+    </children>
+</AnchorPane>

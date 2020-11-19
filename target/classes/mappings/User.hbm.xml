@@ -1,0 +1,33 @@
+<hibernate-mapping>
+<class name = "model.User" table = "USER">
+
+    <id name = "id" type = "int" column = "id">
+        <generator class="native"/>
+    </id>
+
+    <property name = "username" column = "username" type = "string"/>
+    <property name = "password" column = "password" type = "string"/>
+
+    <joined-subclass name = "model.CompanyUser" table = "CompanyUser">
+        <key column="user_id"/>
+        <property name = "name" column = "name" type = "string"/>
+        <property name="lastName" column="lastName" type="string"/>
+        <many-to-one name = "contactInformation" column = "contactInformation" class="model.ContactInformation"/>
+        <set name="categories" cascade="all">
+            <key column="users"/>
+            <many-to-many class="model.Category"/>
+        </set>
+    </joined-subclass>
+
+    <joined-subclass name = "model.PhysicalUser" table = "PhysicalUser">
+        <key column="user_id"/>
+        <property name = "name" column = "name" type = "string"/>
+        <property name="lastName" column="lastName" type="string"/>
+        <many-to-one name = "contactInformation" column = "contactInformation" class="model.ContactInformation"/>
+    </joined-subclass>
+
+
+
+
+</class>
+</hibernate-mapping>

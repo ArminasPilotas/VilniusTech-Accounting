@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane fx:id="registerAnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField editable="false" layoutX="24.0" layoutY="35.0" prefHeight="25.0" prefWidth="99.0" text="Username" />
+      <TextField editable="false" layoutX="24.0" layoutY="69.0" prefHeight="25.0" prefWidth="99.0" text="Password" />
+      <TextField editable="false" layoutX="24.0" layoutY="102.0" prefHeight="25.0" prefWidth="99.0" text="Email" />
+      <TextField editable="false" layoutX="24.0" layoutY="137.0" prefHeight="25.0" prefWidth="99.0" text="Phone Number" />
+      <TextField editable="false" layoutX="24.0" layoutY="169.0" prefHeight="25.0" prefWidth="99.0" text="Country Name" />
+      <TextField editable="false" layoutX="24.0" layoutY="200.0" prefHeight="25.0" prefWidth="99.0" text="Country Code" />
+      <TextField editable="false" layoutX="24.0" layoutY="233.0" prefHeight="25.0" prefWidth="99.0" text="City Name" />
+      <TextField editable="false" layoutX="24.0" layoutY="266.0" prefHeight="25.0" prefWidth="99.0" text="Street Name" />
+      <TextField editable="false" layoutX="24.0" layoutY="300.0" prefHeight="25.0" prefWidth="99.0" text="Post Code" />
+      <Button fx:id="nextButton" layoutX="208.0" layoutY="343.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="185.0" text="Next" />
+      <TextField fx:id="usernameTextField" layoutX="140.0" layoutY="35.0" />
+      <TextField fx:id="emailTextField" layoutX="140.0" layoutY="102.0" />
+      <TextField fx:id="phoneNumberTextField" layoutX="140.0" layoutY="137.0" />
+      <TextField fx:id="countryNameTextField" layoutX="140.0" layoutY="169.0" />
+      <TextField fx:id="countryCodeTextField" layoutX="140.0" layoutY="200.0" />
+      <TextField fx:id="cityNameTextField" layoutX="140.0" layoutY="233.0" />
+      <TextField fx:id="streetNameTextField" layoutX="140.0" layoutY="266.0" />
+      <TextField fx:id="postCodeTextField" layoutX="140.0" layoutY="300.0" />
+      <PasswordField fx:id="passwordTextField" layoutX="140.0" layoutY="69.0" />
+      <TextField editable="false" layoutX="319.0" layoutY="35.0" prefHeight="25.0" prefWidth="99.0" text="First Name" />
+      <TextField editable="false" layoutX="319.0" layoutY="69.0" prefHeight="25.0" prefWidth="99.0" text="Last Name" />
+      <TextField fx:id="firstNameTextField" layoutX="437.0" layoutY="35.0" />
+      <TextField fx:id="lastNameTextField" layoutX="437.0" layoutY="69.0" />
+   </children>
+</AnchorPane>

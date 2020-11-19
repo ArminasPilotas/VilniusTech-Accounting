@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ListView fx:id="incomesViewList" editable="true" layoutX="44.0" layoutY="40.0" prefHeight="200.0" prefWidth="513.0" />
+      <Button fx:id="addButton" layoutX="44.0" layoutY="254.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="109.0" text="ADD" />
+      <Button fx:id="showButton" layoutX="448.0" layoutY="254.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="109.0" text="SHOW" />
+      <Button fx:id="deleteButton" layoutX="313.0" layoutY="254.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="109.0" text="DELETE" />
+      <Button fx:id="updateButton" layoutX="176.0" layoutY="254.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="109.0" text="UPDATE" />
+      <Button fx:id="mainMenuButton" layoutX="244.0" layoutY="326.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="112.0" text="Go To Main Menu" />
+   </children>
+</AnchorPane>

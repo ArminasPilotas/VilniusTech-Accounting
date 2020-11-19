@@ -1,0 +1,20 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="model.Expense" table="Expense">
+        <id name="id" type="int" column="id">
+            <generator class="native"/>
+        </id>
+        <many-to-one name="expenseType" column="expenseType" class="model.ExpenseType" not-null="true"/>
+        <set name="categories" cascade="all">
+            <key column="users"/>
+            <many-to-many class="model.Category"/>
+        </set>
+        <property name="name" column="name" type="string"/>
+        <property name="amount" column="amount" type="string"/>
+        <property name="date" column="date" type="date"/>
+    </class>
+</hibernate-mapping>

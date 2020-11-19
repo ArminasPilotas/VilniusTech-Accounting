@@ -1,0 +1,18 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="model.IncomeType" table="IncomeType">
+        <id name="id" type="int" column="id">
+            <generator class="native"/>
+        </id>
+        <set name="incomes" cascade="all">
+            <key column="incomeType"/>
+            <one-to-many class="model.Income"/>
+        </set>
+        <property name="incomeName" column="incomeName" type="string"/>
+        <property name="incomeCode" column="incomeCode" type="string"/>
+    </class>
+</hibernate-mapping>

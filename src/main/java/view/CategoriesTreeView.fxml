@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="533.0" prefWidth="699.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ListView fx:id="incomeViewList" layoutX="241.0" layoutY="218.0" prefHeight="228.0" prefWidth="194.0" />
+      <ListView fx:id="expenseViewList" layoutX="459.0" layoutY="218.0" prefHeight="228.0" prefWidth="194.0" />
+      <ListView fx:id="userViewList" layoutX="298.0" layoutY="43.0" prefHeight="146.0" prefWidth="323.0" />
+      <Button fx:id="addCategoryButton" layoutX="14.0" layoutY="39.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="98.0" text="Add Category" />
+      <Button fx:id="addUserButton" layoutX="394.0" layoutY="14.0" mnemonicParsing="false" text="Add Responsible User" />
+      <Button fx:id="addIncomeButton" layoutX="297.0" layoutY="193.0" mnemonicParsing="false" text="Add Income" />
+      <Button fx:id="addExpenseButton" layoutX="514.0" layoutY="193.0" mnemonicParsing="false" text="Add Expense" />
+      <Button fx:id="mainMenuButton" layoutX="284.0" layoutY="467.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="132.0" text="Main Menu Button" />
+      <ListView fx:id="categoryViewList" layoutX="14.0" layoutY="70.0" prefHeight="439.0" prefWidth="209.0" />
+      <Button fx:id="deleteCategoryButton" layoutX="110.0" layoutY="39.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="113.0" text="Delete Category" />
+   </children>
+</AnchorPane>

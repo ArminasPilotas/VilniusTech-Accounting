@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button fx:id="manageUserButton" layoutX="215.0" layoutY="26.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="171.0" text="Manage Users" />
+      <Button fx:id="manageIncomesButton" layoutX="215.0" layoutY="89.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="171.0" text="Manage Incomes" />
+      <Button fx:id="manageExpensesButton" layoutX="215.0" layoutY="150.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="171.0" text="Manage Expenses" />
+      <Button fx:id="saveAndExitButton" layoutX="215.0" layoutY="275.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="171.0" text="Save and Exit" />
+      <Button fx:id="manageCategoriesButton" layoutX="215.0" layoutY="209.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="171.0" text="Manage Categories" />
+   </children>
+</AnchorPane>

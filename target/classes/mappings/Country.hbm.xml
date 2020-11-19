@@ -1,0 +1,19 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="model.Country" table="Country">
+        <id name = "id" type = "int" column = "id">
+            <generator class="native"/>
+        </id>
+        <set name="addresses" cascade="all">
+            <key column="country"/>
+            <one-to-many class="model.Address"/>
+        </set>
+        <property name = "countryName" column = "countryName" type = "string"/>
+        <property name="countryCode" column="countryCode" type="string"/>
+    </class>
+
+</hibernate-mapping>
